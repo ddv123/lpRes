@@ -1,0 +1,168 @@
+/*General Styless*/
+* {
+	margin: 0 0;
+	padding: 0 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans";
+	background-color: aliceblue;
+	font-size: 16px;
+
+}
+
+nav {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0);
+	height: 60px;
+	list-style: none;
+	letter-spacing: 0.1em;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+	transition: border-bottom 0.5s linear;
+}
+
+a:hover {
+	border-bottom: 1px solid white;
+	/*animation: 1s fadein forwards;*/
+	
+}
+
+/*@keyframes fadein {
+	0% {
+		border-bottom: 1px solid rgba(255, 255, 255, 0);
+	}
+	100% {
+		border-bottom: 1px solid black;
+	}
+}*/
+
+/*header Styles*/
+header{
+	font-family: "Montserrat"
+}
+
+header h1 {
+	color: white;
+	position: relative;
+	top: 15vh;
+	font-size: 5em;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+
+header nav li {
+	margin: 0 25px;
+	display: flex;
+	align-items: center;
+
+}
+
+header nav li a {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.btn {
+	position: fixed;
+	color: white;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	height: 40px;
+	padding: 0 15px;
+	letter-spacing: .1em;
+	font: normal 16px "Montserrat" ;
+	text-transform: uppercase;
+	border: 1px solid white;
+	background-color: transparent;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.btn:hover {
+	background-color: white;
+	color: #16a9ff;
+}
+
+.slideshow { 
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-image: url(http://www.puerto-penasco.com/blog/wp-content/uploads/2012/07/Ultralight_RockyPoint_photo.jpg); 
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.slideshow li { 
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+
+  /*animation: imageAnimation 50s linear infinite; */
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://images.trvl-media.com/hotels/23000000/22270000/22269700/22269663/1e84c8ae_z.jpg); 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://static.wixstatic.com/media/54adef_391b8fed1b734375af7c2de9140ea94b.jpg/v1/fill/w_955,h_325,al_c,q_80,usm_0.66_1.00_0.01/54adef_391b8fed1b734375af7c2de9140ea94b.webp);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://static.wixstatic.com/media/54adef_df3cde6da118470a953599980ed6f4a5.jpg/v1/fill/w_864,h_231,al_c,lg_1,q_80/54adef_df3cde6da118470a953599980ed6f4a5.webp);
+  animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+.one {
+	position: relative;
+	top: 80		vh;
+}
+
