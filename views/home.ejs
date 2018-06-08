@@ -7,18 +7,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-
 </head>	
 <body>
 <header>
 	
-	<button class="btn">Reserve Now</button>
+	<!-- <button class="btn">Reserve Now</button> -->
 	<nav>
-		<li><a href="#">Home</a></li>
-		<li><a href="#"><span class="nowrap">Rooms and Suites</span></a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Directions</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a class="links" href="#">Home</a></li>
+		<li><a class="links" href="#"><span class="nowrap">Rooms and Suites</span></a></li>
+		<li><a class="links" href="#">About</a></li>
+		<li><a class="links" href="#">Directions</a></li>
+		<li><a class="links" href="#">Contact</a></li>
 	</nav>
 
 	<div class="landing">
@@ -32,7 +31,7 @@
 <section id="banner">
 	<h2>Explore What We Have To Offer</h2>
 
- 	<p>Las Palomas Beach and Golf Resort is the best ranked resort in Puerto Penasco.	Accommodations are fully-furnished condos, ranging from one to five bedrooms, each with breathtaking ocean views of the Sea of Cortez.</p>
+ 	<p>Las Palomas Beach and Golf Resort is the best ranked resort in Puerto Penasco.	Accommodations are fully-furnished, luxury condos, ranging from one to five bedrooms, each with breathtaking ocean views of the Sea of Cortez.</p>
 
  	<div class="rooms">
  		<button>1 bedroom</button>
@@ -115,11 +114,81 @@
 
 
 <section class="about">
-	<h2>About</h2>
-	<p>Rocky Point, also known as Puerto Penasco, is an exciting resort town with beautiful beachfront homes, new luxurious condos and a wide range of activities for anyone thinking about a tropical getaway.</p> 
+	<div class="vid-wrapper">
+		<iframe src="https://www.youtube.com/embed/CluDgHCNXRA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+
+	<!-- might not need the wrapper -->
+	
+	<h2>Discover Puerto Penasco</h2>
+	<p>Rocky Point, also known as Puerto Penasco, is an exciting resort town with beautiful beachfront homes, new luxurious condos and a wide range of activities for anyone thinking about a fun tropical getaway.</p> 
+
+	<br>
+
+	<p style= "font-size: 16px">A short 3.5 hour drive from Phoenix & Tucson, and 6 hours from San Diego California. Rocky Point is on the Sea of Cortez in the Baja Peninsula.  We invite you to come experience what Rocky Point has to offer.  Pristine Sandy Beaches, Golfing, Deep Sea Fishing, Tasty Mexican Cuisine and Luxurious Amenities the Resorts offer.</p>
 </section>
 
+<div id="map">
 
-<script type="text/javascript" src="/js/main.js	" ></script>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="col">
+			<div class="circle">
+				<i class="fab fa-facebook-f fa-3x" ></i>
+			</div>
+
+			<h3>Check out our facebook page: </h3>
+			<a class="links" href="">Rocky Point Vacation Rentals</a>
+		</div>
+		<div class="col">
+			<div class="circle">
+				<i class="far fa-envelope fa-3x" ></i>
+			</div>
+
+			<h3>Make a Reservation or if you have any questions contact us here: </h3>
+			<a class="links" href="">(480) 692-1732 </a>
+			<a class="links" href="" style="text-transform: lowercase;">hongng168@gmail.com</a>
+		</div>
+		<div class="col">
+			<div class="circle">
+				<i class="fas fa-map fa-3x" ></i>
+			</div>
+
+			<h3>Maps and Driving Directions: </h3>
+			<a class="links" href="">Directions From Phoenix <span class="nowrap">(East Valley)</span></a>
+			<a class="links" href="">Directions From Phoenix <span class="nowrap">(Central/West)</span></a>
+			<a class="links" href="">Direction From Tuscon</a>
+			<a class="links" href="">Direction From California</a>
+			<a class="links" href="">Map From Border To <span class="nowrap">Rocky Point</span></a>
+		</div>
+		<div class="col">
+			<div class="circle">
+				<i class="fab fa-tripadvisor fa-3x" ></i>
+			</div>
+
+			<h3>Book through <span class="nowrap">Trip Adviser</span>: </h3>
+			<a class="links" href="https://www.tripadvisor.com/RentalPropertyManager-a_manager.880370">Click Here!</a>
+		</div>
+
+
+	</div>
+	<div class="container pay">
+		<hr>
+		<h3>PAYMENT AND REFUND POLICY</h3>
+		<p>PAYMENTS SECURITY DEPOSIT Upon check in at the Resort, please be advised that you will be required to leave a security deposit of $150.00 USD payable in CASH or CREDIT CARD ONLY (NO DEBIT) for any damages or losses occurring to the condominium during your stay. This deposit will be refunded upon your check out if no damages or losses occur. We prefer credit card payments or bank deposits. - At the time of booking a reservation, we charge 50% of the room charge cost. - We will charge the remaining 50% plus taxes of the reservation 10 days prior your check-in date. - Credit card or cash payments are preferred. VISA and MC credit card payments are processed in US dollars; AMEX is also accepted but will incur currency conversion fees. It is important that you clearly understand our policy for refunds, cancellations and changes. CHANGE & CANCELLATION POLICY: - Contact Las Palomas reservations either by email or phone to request date or condo location changes. Contact info is at the to right corner of this form. Rates are subject to change. - Confirmed reservations which are cancelled at least 10 calendar days before your check-in data will result in 150 USD cancellation fee. - There will be no reservation changes allowed within 10 days of your arrival</p>
+	</div>
+	
+</footer>
+
+<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="js/main.js" ></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADv0owp-XZVAsNf8yjWdFa4CDDvmL2Xs4&callback=initMap" async defer></script>
+
+
 </body>
 </html>
