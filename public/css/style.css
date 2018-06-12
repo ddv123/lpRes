@@ -88,6 +88,7 @@ header nav li {
 	border: 1px solid white;
 	background-color: transparent;
 	transition: background-color 0.5s, color 0.5s;
+
 }
 
 .btn:hover {
@@ -101,6 +102,25 @@ header nav li {
 	width: 800px;	
 	align-self: center;
 }
+
+.landing h1{
+	opacity: 0;
+	animation: fadein 2s forwards ease-in-out;
+}
+
+@keyframes fadein {
+	0%{
+		transform: translateY(-30px);
+	}
+
+	50%{
+		transform: translateY(4px);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 
 header h1 {
 	color: white;
@@ -130,6 +150,8 @@ header h1 {
 	justify-content: center;
 	font-size: 30px;
 	transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
+	opacity: 0;
+	animation: fadein 2s 1s forwards ease-out;
 }
 
 .start:hover {
@@ -204,6 +226,20 @@ section p {
     display: none; 
 }
 
+.test {
+	animation: leftscroll 5s forwards linear;
+}
+
+@keyframes leftscroll {
+	0%{
+		transform: translateX(30px);
+	}
+
+	100%{
+		transform: translateX(-600px);
+	}
+
+}
 
 
 article {
@@ -239,6 +275,7 @@ article a img {
 	border: none;
 	border-radius: 50%;
 	transition: opacity 0.5s;
+	z-index: 10;
 }
 
 .scroll:hover{
@@ -255,14 +292,6 @@ article a img {
 	top: 50%;
 	right: 0;
 	transform: translate(40%, -50%);
-
-}
-
-#left:hover {
-	animation: ;
-}
-
-@keyframes leftscroll  {
 
 }
 
@@ -365,13 +394,5 @@ footer {
 	padding: 1em 0;
 }
 
-/*.pay p {
-	padding-bottom: 1em; 
-}*/
-
-/*.container hr{
-	width: 100%;
-}
-*/
 
 
