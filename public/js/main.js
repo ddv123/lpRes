@@ -27,8 +27,8 @@ function initMap(){
 var left = document.getElementById("left");
 var right = document.getElementById("right");
 
-left.addEventListener("mouseover", hoverLeft);
-right.addEventListener("mouseover", hoverRight);
+left.addEventListener("mouseover", hoverRight);
+right.addEventListener("mouseover", hoverLeft);
 
 function hoverLeft() {
 
@@ -38,7 +38,7 @@ function hoverLeft() {
 
 	var isMouseOut = false;
 
-	document.getElementById("left").onmouseout = function(){
+	document.getElementById("right").onmouseout = function(){
 		return isMouseOut = true;
 	};
 
@@ -59,7 +59,7 @@ function hoverRight() {
 
 	var isMouseOut = false;
 
-	document.getElementById("right").onmouseout = function(){
+	document.getElementById("left").onmouseout = function(){
 		return isMouseOut = true;
 	};
 
@@ -72,4 +72,31 @@ function hoverRight() {
 		}
 	}
 }
+
+// trigger fade in on scroll
+
+window.addEventListener("scroll", function(){
+	if (window.scrollY > 576) {
+		carFade();
+	}
+});
+
+// Carousel fade in 
+function carFade(){
+	var cardArray = document.querySelectorAll( ".reel article");
+	var i = 1;
+
+	Array.prototype.forEach.call(cardArray, function(arr) { 
+	    setTimeout(function(){ 
+	    	arr.classList.add("visible");
+	    }, 400*i );
+		i++;
+	});
+}
+
+
+
+
+
+
 
